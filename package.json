@@ -1,0 +1,40 @@
+{
+  "name": "mac-itunes",
+  "version": "2019.4.13",
+  "description": "iTunes.app cli",
+  "keywords": [
+    "itunes"
+  ],
+  "homepage": "https://github.com/looking-for-a-job/mac-itunes",
+  "license": "Unlicense",
+  "bin": {
+    ".itunes-mute.applescript": "./scripts/.itunes-mute.applescript",
+    ".itunes-muted.applescript": "./scripts/.itunes-muted.applescript",
+    ".itunes-next.applescript": "./scripts/.itunes-next.applescript",
+    ".itunes-pause.applescript": "./scripts/.itunes-pause.applescript",
+    ".itunes-play-playlist.applescript": "./scripts/.itunes-play-playlist.applescript",
+    ".itunes-play-track.applescript": "./scripts/.itunes-play-track.applescript",
+    ".itunes-play.applescript": "./scripts/.itunes-play.applescript",
+    ".itunes-playlists.applescript": "./scripts/.itunes-playlists.applescript",
+    ".itunes-prev.applescript": "./scripts/.itunes-prev.applescript",
+    ".itunes-state.applescript": "./scripts/.itunes-state.applescript",
+    ".itunes-stop.applescript": "./scripts/.itunes-stop.applescript",
+    ".itunes-unmute.applescript": "./scripts/.itunes-unmute.applescript",
+    ".itunes-volume.applescript": "./scripts/.itunes-volume.applescript",
+    "itunes": "./scripts/itunes",
+    "itunes-kill": "./scripts/itunes-kill",
+    "itunes-mute": "./scripts/itunes-mute",
+    "itunes-muted": "./scripts/itunes-muted",
+    "itunes-next": "./scripts/itunes-next",
+    "itunes-pause": "./scripts/itunes-pause",
+    "itunes-pid": "./scripts/itunes-pid",
+    "itunes-play": "./scripts/itunes-play",
+    "itunes-play-track": "./scripts/itunes-play-track",
+    "itunes-playlists": "./scripts/itunes-playlists",
+    "itunes-prev": "./scripts/itunes-prev",
+    "itunes-state": "./scripts/itunes-state",
+    "itunes-stop": "./scripts/itunes-stop",
+    "itunes-unmute": "./scripts/itunes-unmute",
+    "itunes-volume": "./scripts/itunes-volume"
+  }
+}

@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+{ set +x; } 2>/dev/null
+
+usage() {
+    cat <<EOF 1>&2
+usage: $(basename $0) command [args]
+
+Available commands:
+
+    play        play current track
+    pause       pause current track
+    next        next track
+    prev        previous track
+    stop        stop play
+
+    playlists   playlists names
+
+    volume      get/set iTunes volume
+    mute        mute sound
+    unmute      unmute sound
+    muted       true/false if muted
+
+    kill        kill iTunes.app
+    pid         iTunes.app pid
+
+run \`$(basename $0) COMMAND --help\` for more infos
+EOF
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]]; exit
+}
+
+[[ $1 == "-h" ]] || [[ $1 == "--help" ]] && usage "$@"
+
+[[ $# == 0 ]] && usage
+
+[[ $OSTYPE != *"darwin"* ]] && echo "OS X only" && exit
+
+# path/to/bin/.itunes-command
+# path/to/bin/itunes
+
+"${BASH_SOURCE[0]%/*}"/"${BASH_SOURCE[0]##*/}"-"$1" "${@:2}"
