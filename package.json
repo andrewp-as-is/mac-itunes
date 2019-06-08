@@ -1,7 +1,7 @@
 {
   "name": "mac-itunes",
   "version": "2019.4.13",
-  "description": "iTunes.app cli",
+  "description": "macOS iTunes.app scripts",
   "keywords": [
     "itunes"
   ],
