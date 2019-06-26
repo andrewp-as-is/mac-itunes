@@ -21,6 +21,7 @@ $ [sudo] pip install mac-itunes
 command|`usage`
 -|-
 `itunes` |`usage: itunes command [args]`
+[`itunes-frontmost`](# "print 1 if 'iTunes.app' is frontmost, else 0") |`usage: itunes-frontmost`
 `itunes-kill` |`usage: itunes-kill`
 `itunes-mute` |`usage: itunes-mute`
 `itunes-muted` |`usage: itunes-muted`
@@ -56,11 +57,17 @@ mute
 ```bash
 $ itunes mute
 $ itunes muted
-true
+1
 $ itunes unmute
 ```
 
-iTunes.app process
+frontmost (`1` or `0`)
+```bash
+$ itunes frontmost
+0
+```
+
+`iTunes.app` process
 ```bash
 $ itunes pid
 42

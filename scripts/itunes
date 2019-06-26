@@ -18,7 +18,9 @@ Available commands:
     volume      get/set iTunes volume
     mute        mute sound
     unmute      unmute sound
-    muted       true/false if muted
+    muted       print 1 if 'iTunes.app' is muted, else 0
+
+    frontmost   print 1 if 'iTunes.app' is frontmost, else 0
 
     kill        kill iTunes.app
     pid         iTunes.app pid
